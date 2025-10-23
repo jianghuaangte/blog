@@ -7,14 +7,14 @@ config:
     full: true
     background: tint-plate
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      name: My CLI
+      tagline: 命令集
+      text: 常见的命令集
       actions:
         -
           theme: brand
-          text: 博客
-          link: /blog/
+          text: 进入
+          link: /cli/
         -
           theme: alt
           text: Github →
