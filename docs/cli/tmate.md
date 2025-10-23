@@ -32,7 +32,10 @@ tmate
 ```
 
 **查看所有连接地址**
-- 将只读链接发送给用户
 ```shell
 tmate show-messages
 ```
+
+::: warning
+仅将只读链接发送给用户
+:::

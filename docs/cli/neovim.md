@@ -11,8 +11,8 @@ permalink: /cli/u6kqsl6n/
 @tab glibc
 ```shell
 curl -fsSL \
-     https://ghproxy.net/https://raw.bgithub.xyz/free-150/scripts/refs/heads/main/nvim.sh \
-     | bash -s -- -m https://ghproxy.net
+     https://ghproxy.cn/https:/raw.githubusercontent.com/free-150/scripts/refs/heads/main/nvim.sh \
+     | bash -s -- -m https://ghproxy.cn
 ```
 
 

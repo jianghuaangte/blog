@@ -89,6 +89,7 @@ const cli = defineCollection({
       text: '远程',
       collapsed: false,
       items: [
+        'sshd',
         'vnt',
         'tmate',
         'jianguoyun',

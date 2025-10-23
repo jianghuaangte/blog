@@ -33,10 +33,10 @@ local font_size = platform.is_mac and 16 or 9.75
 - 可以使用`which <shell>` 查看你的 shell 位置
 ::: code-tabs
 @tab ~/.config/wezterm/config/launch.lua
-```lua
+```lua :collapsed-lines
 -- 这是设置 win
 if platform.is_win then
-   options.default_prog = { 'pwsh', '-NoLogo' }  -- 在这里指定默认shell
+   options.default_prog = { 'pwsh', '-NoLogo' }  -- 在这里指定默认shell // [!code highlight]
    options.launch_menu = {
       { label = 'PowerShell Core', args = { 'pwsh', '-NoLogo' } },
       { label = 'PowerShell Desktop', args = { 'powershell' } },
@@ -50,7 +50,7 @@ if platform.is_win then
    }
 -- 这是设置 Mac
 elseif platform.is_mac then
-   options.default_prog = { '/bin/zsh', '-l' }   -- 在这里指定默认shell
+   options.default_prog = { '/bin/zsh', '-l' }   -- 在这里指定默认shell // [!code highlight]
    options.launch_menu = {
       { label = 'Bash', args = { 'bash', '-l' } },
       { label = 'Fish', args = { '/opt/homebrew/bin/fish', '-l' } },
@@ -59,14 +59,13 @@ elseif platform.is_mac then
    }
 -- 这是设置 Linux
 elseif platform.is_linux then
-   options.default_prog = { 'fish', '-l' }  -- 在这里指定默认shell
+   options.default_prog = { 'fish', '-l' }  -- 在这里指定默认shell // [!code highlight]
    options.launch_menu = {
       { label = 'Bash', args = { 'bash', '-l' } },
       { label = 'Fish', args = { 'fish', '-l' } },
       { label = 'Zsh', args = { 'zsh', '-l' } },
    }
 end
-
 ```
 
 :::
@@ -77,10 +76,10 @@ end
 - 必须要有`multiplexing = 'None'`否则会走wezterm 自身的server 协议
 ::: code-tabs
 @tab ~/.config/wezterm/config/launch.lua
-```lua
+```lua :collapsed-lines
 local platform = require('utils.platform')
 
--- 在这里添加本地ssh
+-- 在这里添加本地ssh // [!code focus:27]
 local options = {
    -- ref: https://wezfurlong.org/wezterm/config/lua/SshDomain.html
    ssh_domains = {

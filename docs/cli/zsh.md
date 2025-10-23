@@ -34,5 +34,5 @@ chsh -s $(which zsh)
 安装命令
 
 ```shell
-REMOTE=https://ghfast.top/https://github.com/ohmyzsh/ohmyzsh.git sh -c "$(curl -fsSL https://ghfast.top/https://raw.bgithub.xyz/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+REMOTE=https://ghproxy.cn/https://github.com/ohmyzsh/ohmyzsh.git sh -c "$(curl -fsSL https://ghproxy.cn/https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```

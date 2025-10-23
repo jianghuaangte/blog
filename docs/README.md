@@ -9,7 +9,7 @@ config:
     hero:
       name: My CLI
       tagline: 命令集
-      text: 常见的命令集
+      text: 常用的基础命令集
       actions:
         -
           theme: brand
@@ -18,5 +18,5 @@ config:
         -
           theme: alt
           text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          link: https://jianghuaangte.github.io
 ---
