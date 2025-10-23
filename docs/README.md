@@ -14,7 +14,7 @@ config:
         -
           theme: brand
           text: 进入
-          link: /cli/
+          link: /cli/wezterm.md
         -
           theme: alt
           text: Github →
